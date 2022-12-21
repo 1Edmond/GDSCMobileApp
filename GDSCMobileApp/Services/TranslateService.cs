@@ -1,5 +1,4 @@
-﻿using GDSCMobileApp.Extensions;
-
+﻿
 namespace GDSCMobileApp.Services;
 
 public class TranslateService : ITranslate

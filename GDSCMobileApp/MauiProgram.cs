@@ -1,4 +1,4 @@
-﻿using GDSCMobileApp.Services;
+﻿using Microsoft.Maui.LifecycleEvents;
 
 namespace GDSCMobileApp;
 
@@ -14,7 +14,23 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+			})
+			.ConfigureLifecycleEvents(events =>
+            {
+#if ANDROID
+
+                events.AddAndroid(
+                    android => android.OnPause(
+                        (activity) => activity.Window?.
+                        SetFlags(Android.Views.WindowManagerFlags.BlurBehind, Android.Views.WindowManagerFlags.BlurBehind)));
+
+                events.AddAndroid(
+                    android => android.OnResume(
+                        (activity) => activity.Window?.
+                        ClearFlags(Android.Views.WindowManagerFlags.BlurBehind)));
+
+#endif
+            }); ;
 
         builder.Services.AddLocalization();
 
@@ -27,6 +43,7 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+		
 
 		return builder.Build();
 	}

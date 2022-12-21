@@ -6,3 +6,5 @@ global using CommunityToolkit.Mvvm.ComponentModel;
 global using GDSCMobileApp.Helpers;
 global using GDSCMobileApp.Resources.Languages;
 global using Microsoft.Extensions.Localization;
+global using GDSCMobileApp.Extensions;
+global using GDSCMobileApp.Services;
