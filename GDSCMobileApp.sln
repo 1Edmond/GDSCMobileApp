@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GDSCMobileApp", "GDSCMobileApp\GDSCMobileApp.csproj", "{44FBA513-6BA6-4191-A6BB-634C8CA34EBF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GDCSBlockchain", "GDCSBlockchain\GDCSBlockchain.csproj", "{70B5D1AD-17F1-4396-984D-AF5E989FBD44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44FBA513-6BA6-4191-A6BB-634C8CA34EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FBA513-6BA6-4191-A6BB-634C8CA34EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FBA513-6BA6-4191-A6BB-634C8CA34EBF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{44FBA513-6BA6-4191-A6BB-634C8CA34EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FBA513-6BA6-4191-A6BB-634C8CA34EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44FBA513-6BA6-4191-A6BB-634C8CA34EBF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{70B5D1AD-17F1-4396-984D-AF5E989FBD44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B5D1AD-17F1-4396-984D-AF5E989FBD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B5D1AD-17F1-4396-984D-AF5E989FBD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B5D1AD-17F1-4396-984D-AF5E989FBD44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal
